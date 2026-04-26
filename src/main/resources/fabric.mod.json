@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "ediblemoss",
+	"version": "${version}",
+	"name": "Edible Moss",
+	"description": "Right click with an empty hand to eat moss clean off the stone.",
+	"authors": [
+		"camoweed_"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"icon": "icon.png",
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"camoweed.ediblemoss.EdibleMoss"
+		],
+		"beforeGameStart": [
+			"camoweed.ediblemoss.EdibleMoss"
+		],
+		"afterGameStart": [
+			"camoweed.ediblemoss.EdibleMoss"
+		],
+		"recipesReady": [
+			"camoweed.ediblemoss.EdibleMoss"
+		]
+	},
+	"mixins": [
+		"ediblemoss.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${fabricloader}",
+		"halplibe": ">=${halplibe}",
+		"minecraft": "*",
+		"java": ">=${java}"
+	},
+	"suggests": {
+		"modmenu": ">=${modmenu}"
+	}
+}
